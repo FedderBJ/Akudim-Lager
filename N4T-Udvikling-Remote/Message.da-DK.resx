@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fmComGogbProdRess" xml:space="preserve">
+    <value>Medarbejder data</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmComGolblHeaderText1" xml:space="preserve">
+    <value>Læs ID</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmComGoMessage1" xml:space="preserve">
+    <value>Medarbejder ikke fundet, eller forkert password</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmUmlagerunglblInputText1" xml:space="preserve">
+    <value>Ny placering</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerunglblInputText2" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerunglblInputText3" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerungMessage1" xml:space="preserve">
+    <value>Ingen P-ID Info</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText1" xml:space="preserve">
+    <value>Indkøbsordre Nr.</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText2" xml:space="preserve">
+    <value>Leverandør LOT</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText3" xml:space="preserve">
+    <value>Antal</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText4" xml:space="preserve">
+    <value>P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText5" xml:space="preserve">
+    <value>M-H-D</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText6" xml:space="preserve">
+    <value>Bogfør</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage1" xml:space="preserve">
+    <value>Ingen Købslinjer</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage2" xml:space="preserve">
+    <value>Ordren findes ikke</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage3" xml:space="preserve">
+    <value>P-ID findes ikke</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleTextBox1" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmWhseReceiptSingleDateMask" xml:space="preserve">
+    <value>00-00-0000</value>
+    <comment>MaskedEdit</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText1" xml:space="preserve">
+    <value>Scan ordre nr.</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText3" xml:space="preserve">
+    <value>Antal</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText2" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderMessage1" xml:space="preserve">
+    <value>Der er ingen ordre</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPickOrderMessage2" xml:space="preserve">
+    <value>Der er ingen ordrelinier</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPickOrderTextBox1" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText4" xml:space="preserve">
+    <value>Bogfør</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderMessage3" xml:space="preserve">
+    <value>Forkert P-ID</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage4" xml:space="preserve">
+    <value>Ordren er ikke frigivet</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage5" xml:space="preserve">
+    <value>P-ID er brugt</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitlblInputText1" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmLotSplitlblInputText2" xml:space="preserve">
+    <value>Antal</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmLotSplitlblInputText3" xml:space="preserve">
+    <value>Scan Ny P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmLotSplitTextBox1" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmLotSplitMessage1" xml:space="preserve">
+    <value>Ingen P-ID Info</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitlblInputText4" xml:space="preserve">
+    <value>Bogfør</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerungMessage2" xml:space="preserve">
+    <value>Placering findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage6" xml:space="preserve">
+    <value>Prøve af {0} antal {1} {2}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage6Caption" xml:space="preserve">
+    <value>Udtag prøve</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage7" xml:space="preserve">
+    <value>Forkert P-ID scannet</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText1" xml:space="preserve">
+    <value>Scan Vare Nr.</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText2" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText3" xml:space="preserve">
+    <value>Scan til maskine</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmProdUmlagerungMessage1" xml:space="preserve">
+    <value>Varen findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerungMessage2" xml:space="preserve">
+    <value>Scannet forkert P-ID. Ikke samme Vare.</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerungMessage3" xml:space="preserve">
+    <value>Placeringen er ikke en maskine</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerungTextBox1" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmPickOrderMessage4" xml:space="preserve">
+    <value>Antal må ikke være mere end {0}</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmPickOrderMessage4Caption" xml:space="preserve">
+    <value>Antals fejl</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmLotSplitMessage2" xml:space="preserve">
+    <value>Forkert P-ID scannet</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitMessage3" xml:space="preserve">
+    <value>Printer ny P-ID label</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryDataMask" xml:space="preserve">
+    <value>00-00-0000</value>
+  </data>
+  <data name="fmInventorylblInputText1" xml:space="preserve">
+    <value>Scan Vare / P-ID [ # = ny]</value>
+  </data>
+  <data name="fmInventorylblInputText2" xml:space="preserve">
+    <value>Lokation</value>
+  </data>
+  <data name="fmInventorylblInputText3" xml:space="preserve">
+    <value>Scan Placering</value>
+  </data>
+  <data name="fmInventorylblInputText4" xml:space="preserve">
+    <value>Varenummer</value>
+  </data>
+  <data name="fmInventorylblInputText5" xml:space="preserve">
+    <value>M-H-D</value>
+  </data>
+  <data name="fmInventorylblInputText6" xml:space="preserve">
+    <value>Antal</value>
+  </data>
+  <data name="fmInventoryTextBox1" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+  </data>
+  <data name="fmInventorylblInputText9" xml:space="preserve">
+    <value>Bogfør</value>
+  </data>
+  <data name="fmInventorylblInputText7" xml:space="preserve">
+    <value>Leverandør LOT</value>
+  </data>
+  <data name="fmInventorylblInputText8" xml:space="preserve">
+    <value>Bekræft ny P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventoryMessage1" xml:space="preserve">
+    <value>P-ID findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage2" xml:space="preserve">
+    <value>Scannet forkert P-ID</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage3" xml:space="preserve">
+    <value>Printer ny P-ID</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage4" xml:space="preserve">
+    <value>Placering findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage5" xml:space="preserve">
+    <value>M-H-D {0}{1}kan ikke være før{2}{3}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage8" xml:space="preserve">
+    <value>M-H-D {0}{1}kan ikke være før{2}{3}</value>
+  </data>
+  <data name="fmLotSplitMessage4" xml:space="preserve">
+    <value>Antal skal være mindre end {0}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPIDInfoMessage1" xml:space="preserve">
+    <value>Ingen P-ID Info</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage9" xml:space="preserve">
+    <value>Modtag antal er {0}{1} Skal det ændres til {2}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmInventoryMessage6" xml:space="preserve">
+    <value>Antal kan ikke være mindre end 0</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmPickOrderDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmProdUmlagerungDecimals" xml:space="preserve">
+    <value>F0</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmUmlagerungDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmWhseReceiptSingleDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmInventoryMessage7" xml:space="preserve">
+    <value>Placering er ikke tom</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmUmlagerungMessage3" xml:space="preserve">
+    <value>Placering er ikke tom</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmComGolblHeaderText2" xml:space="preserve">
+    <value>Password</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmComGoMessage2" xml:space="preserve">
+    <value>Fejl ved printer skift</value>
+  </data>
+  <data name="fmComGoMessage3" xml:space="preserve">
+    <value>Printer skiftet OK</value>
+  </data>
+  <data name="fmWhseReceiptSingleMessage10" xml:space="preserve">
+    <value>Kunne ikke modificere købslinjen</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage8" xml:space="preserve">
+    <value>Varen eksister ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage9" xml:space="preserve">
+    <value>Antal må ikke være mere end 1.000.000</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage10" xml:space="preserve">
+    <value>Optælling er ikke tilladt på nuværende placering</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmComGolblHeaderText3" xml:space="preserve">
+    <value>Scan Printer ID</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText7" xml:space="preserve">
+    <value>Fortsæt ENTER eller Hent data</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage11" xml:space="preserve">
+    <value>Der er {0} Linjer på modtagelsen, som ikke har varesporing{1}Modtag linjerne manuelt fra en pc</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText4" xml:space="preserve">
+    <value>Bogfør</value>
+  </data>
+  <data name="fmOutPutlblInputText1" xml:space="preserve">
+    <value>Scan Produktionsordre</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmOutPutlblInputText2" xml:space="preserve">
+    <value>Tast /Scan Batch Nr.</value>
+  </data>
+  <data name="fmOutPutlblInputText3" xml:space="preserve">
+    <value>Tast Færdig Antal</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmOutPutlblInputText4" xml:space="preserve">
+    <value>Tast Spild Antal</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmOutPutlblInputText5" xml:space="preserve">
+    <value>Scan Ny P-ID</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmOutPutlblInputText6" xml:space="preserve">
+    <value>Bogfør</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmOutPutMessage1" xml:space="preserve">
+    <value>Produktionsordre findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmOutPutMessage2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fmOutPutMessage3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fmOutPuttbInputData" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+  </data>
+  <data name="fmPurchaseOrdertListName" xml:space="preserve">
+    <value>Navn</value>
+  </data>
+  <data name="fmPurchaseOrdertListNo" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="fmPurchaseOrdertListOrder" xml:space="preserve">
+    <value>Leverandør Ordre nr.</value>
+  </data>
+  <data name="fmPidInventoryDataMask" xml:space="preserve">
+    <value>00-00-0000</value>
+  </data>
+  <data name="fmPidInventoryDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmPidInventorylblInputText1" xml:space="preserve">
+    <value>Scan Vare / P-ID [ # = ny]</value>
+  </data>
+  <data name="fmPidInventorylblInputText2" xml:space="preserve">
+    <value>Lokation</value>
+  </data>
+  <data name="fmPidInventorylblInputText3" xml:space="preserve">
+    <value>Scan Placering</value>
+  </data>
+  <data name="fmPidInventorylblInputText4" xml:space="preserve">
+    <value>Varenummer</value>
+  </data>
+  <data name="fmPidInventorylblInputText5" xml:space="preserve">
+    <value>M-H-D</value>
+  </data>
+  <data name="fmPidInventorylblInputText6" xml:space="preserve">
+    <value>Antal</value>
+  </data>
+  <data name="fmPidInventorylblInputText7" xml:space="preserve">
+    <value>Leverandør LOT</value>
+  </data>
+  <data name="fmPidInventorylblInputText8" xml:space="preserve">
+    <value>Bekræft ny P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPidInventorylblInputText9" xml:space="preserve">
+    <value>Bogfør</value>
+  </data>
+  <data name="fmPidInventoryMessage1" xml:space="preserve">
+    <value>P-ID findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage10" xml:space="preserve">
+    <value>Optælling er ikke tilladt på nuværende placering</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage2" xml:space="preserve">
+    <value>Scannet forkert P-ID</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage3" xml:space="preserve">
+    <value>Printer ny P-ID</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage4" xml:space="preserve">
+    <value>Placering findes ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage5" xml:space="preserve">
+    <value>M-H-D {0}{1}kan ikke være før{2}{3}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage6" xml:space="preserve">
+    <value>Antal kan ikke være mindre end 0</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage7" xml:space="preserve">
+    <value>Placering er ikke tom</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage8" xml:space="preserve">
+    <value>Varen eksister ikke</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryMessage9" xml:space="preserve">
+    <value>Antal må ikke være mere end 1.000.000</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPidInventoryTextBox1" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+  </data>
+  <data name="fmSelectorInventoryCaption" xml:space="preserve">
+    <value>Optælling</value>
+  </data>
+  <data name="fmSelectorInventoryHelp" xml:space="preserve">
+    <value>I dette menupunkt er det muligt at optælle en vare på en placering. Scan det pågældende varenummer og efterfølgende den placering den står på. Angiv det antal der fysisk er på placeringen af varen. Det hele bekræftes med ENTER. Er varen registreret med et lot nr. så skal dette kun scannes og det fysiske antal angives. Det hele bekræftes med ENTER.</value>
+  </data>
+  <data name="fmSelectorTransferCaption" xml:space="preserve">
+    <value>Vareflytning</value>
+  </data>
+  <data name="fmSelectorTransferHelp" xml:space="preserve">
+    <value>I dette menupunkt er det muligt at flytte en vare fra en placering til en anden. Scan det pågældende varenummer og efterfølgende den placering den står på. Der på scannes den placering hvor varen ønskes flyttet til. Det hele bekræftes med ENTER. Er varen registreret med et lot nr. så skal dette kun scannes samt den ny placering. Det hele bekræftes med ENTER.</value>
+  </data>
+  <data name="fmItemTransferError1" xml:space="preserve">
+    <value>Fra placering findes ikke</value>
+  </data>
+  <data name="fmItemTransferError2" xml:space="preserve">
+    <value>Til placering findes ikke</value>
+  </data>
+  <data name="fmItemTransferError3" xml:space="preserve">
+    <value>Antal kan ikke være mindre en 0</value>
+  </data>
+  <data name="fmItemTransferError4" xml:space="preserve">
+    <value>Du kan max flytte {0} {1}</value>
+  </data>
+  <data name="fmItemTransferError5" xml:space="preserve">
+    <value>Der er ingen beholdning af varen {0} på placering {1}</value>
+  </data>
+  <data name="fmItemTransferlblInputText1" xml:space="preserve">
+    <value>Scan fra placering</value>
+  </data>
+  <data name="fmItemTransferlblInputText2" xml:space="preserve">
+    <value>Scan til placering</value>
+  </data>
+  <data name="fmItemTransferlblInputText3" xml:space="preserve">
+    <value>Flyt antal</value>
+  </data>
+  <data name="fmItemTransferlblInputText4" xml:space="preserve">
+    <value>Bogfør</value>
+  </data>
+  <data name="fmItemTransferlblInputText5" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+  </data>
+  <data name="fmSelectorError1" xml:space="preserve">
+    <value>{0} blev ikke genkendt som en vare eller et lot nr.</value>
+  </data>
+  <data name="fmSetupError1" xml:space="preserve">
+    <value>Forkert EXIT kode</value>
+  </data>
+  <data name="fmPidItemTransferError1" xml:space="preserve">
+    <value>Fra placering findes ikke</value>
+  </data>
+  <data name="fmPidItemTransferError2" xml:space="preserve">
+    <value>Til placering findes ikke</value>
+  </data>
+  <data name="fmPidItemTransferError3" xml:space="preserve">
+    <value>Antal kan ikke være mindre en 0</value>
+  </data>
+  <data name="fmPidItemTransferError4" xml:space="preserve">
+    <value>Du kan max flytte {0} {1}</value>
+  </data>
+  <data name="fmPidItemTransferError5" xml:space="preserve">
+    <value>Der er ingen beholdning af varen {0} på placering {1}</value>
+  </data>
+  <data name="fmPidItemTransferlblInputText1" xml:space="preserve">
+    <value>Scan fra placering</value>
+  </data>
+  <data name="fmPidItemTransferlblInputText2" xml:space="preserve">
+    <value>Scan til placering</value>
+  </data>
+  <data name="fmPidItemTransferlblInputText3" xml:space="preserve">
+    <value>Flyt antal</value>
+  </data>
+  <data name="fmPidItemTransferlblInputText4" xml:space="preserve">
+    <value>Bogfør</value>
+  </data>
+  <data name="fmPidItemTransferlblInputText5" xml:space="preserve">
+    <value>Bekræft med ENTER</value>
+  </data>
+  <data name="fmPickOrderLabelInputText5" xml:space="preserve">
+    <value>Scan Varenummer</value>
+  </data>
+  <data name="fmPickOrderLabelInputText6" xml:space="preserve">
+    <value>Scan Placering</value>
+  </data>
+</root>

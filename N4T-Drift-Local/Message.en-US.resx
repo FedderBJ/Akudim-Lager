@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fmComGogbProdRess" xml:space="preserve">
+    <value>Employee data</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmComGolblHeaderText1" xml:space="preserve">
+    <value>Read ID</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmComGoMessage1" xml:space="preserve">
+    <value>Employee not found or wrong password</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmUmlagerunglblInputText1" xml:space="preserve">
+    <value>New Bincode</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerunglblInputText2" xml:space="preserve">
+    <value>Confirm with ENTER</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerunglblInputText3" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerungMessage1" xml:space="preserve">
+    <value>No P-ID Info</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText1" xml:space="preserve">
+    <value>Purchaseorder no.</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText2" xml:space="preserve">
+    <value>Vendor LOT</value>
+    <comment>label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText3" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText4" xml:space="preserve">
+    <value>P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText5" xml:space="preserve">
+    <value>Best before</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText6" xml:space="preserve">
+    <value>Post</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage1" xml:space="preserve">
+    <value>No purchaselines</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage2" xml:space="preserve">
+    <value>Order not found</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage3" xml:space="preserve">
+    <value>P-ID dosn't exist</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleTextBox1" xml:space="preserve">
+    <value>Confirm with ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmWhseReceiptSingleDateMask" xml:space="preserve">
+    <value>0000-00-00</value>
+    <comment>MaskedEdit</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText1" xml:space="preserve">
+    <value>Scan order no.</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText3" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText2" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderMessage1" xml:space="preserve">
+    <value>There is no order</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmPickOrderMessage2" xml:space="preserve">
+    <value>There is no order lines</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmPickOrderTextBox1" xml:space="preserve">
+    <value>Confirm with ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmPickOrderLabelInputText4" xml:space="preserve">
+    <value>Post</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmPickOrderMessage3" xml:space="preserve">
+    <value>Wrong P-ID</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage4" xml:space="preserve">
+    <value>Order is not released</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage5" xml:space="preserve">
+    <value>P-ID already used</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitlblInputText1" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmLotSplitlblInputText2" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmLotSplitlblInputText3" xml:space="preserve">
+    <value>Scan New P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmLotSplitTextBox1" xml:space="preserve">
+    <value>Confirm with ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmLotSplitMessage1" xml:space="preserve">
+    <value>P-ID dosn't exist</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitlblInputText4" xml:space="preserve">
+    <value>Post</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmUmlagerungMessage2" xml:space="preserve">
+    <value>Bin not found</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage6" xml:space="preserve">
+    <value>Sample of {0} quantity {1} {2}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage6Caption" xml:space="preserve">
+    <value>Take Quality sample</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage7" xml:space="preserve">
+    <value>Wrong P-ID Scanned</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText1" xml:space="preserve">
+    <value>Scan Item No.</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText2" xml:space="preserve">
+    <value>Scan P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText3" xml:space="preserve">
+    <value>Scan Bin</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmProdUmlagerungMessage11" xml:space="preserve">
+    <value>Item not found</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerungMessage2" xml:space="preserve">
+    <value>Scanned wrong P-ID</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerungMessage3" xml:space="preserve">
+    <value>Bin is not a Workcenter</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerungTextBox1" xml:space="preserve">
+    <value>Confirm with ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmPickOrderMessage4" xml:space="preserve">
+    <value>Quantity can not be grater then {0}</value>
+    <comment>Fehler</comment>
+  </data>
+  <data name="fmPickOrderMessage4Caption" xml:space="preserve">
+    <value>Quantity Error</value>
+    <comment>Caption</comment>
+  </data>
+  <data name="fmLotSplitMessage2" xml:space="preserve">
+    <value>Wrong P-ID Scanned</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitMessage3" xml:space="preserve">
+    <value>Printing new P-ID label</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryDataMask" xml:space="preserve">
+    <value>0000-00-00</value>
+    <comment>MaskedEdit</comment>
+  </data>
+  <data name="fmInventorylblInputText1" xml:space="preserve">
+    <value>Scan P-ID  [ # = new]</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventorylblInputText2" xml:space="preserve">
+    <value>Location</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventorylblInputText3" xml:space="preserve">
+    <value>Scan Bin</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventorylblInputText4" xml:space="preserve">
+    <value>Item No.</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventorylblInputText5" xml:space="preserve">
+    <value>Best before</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventorylblInputText6" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventoryTextBox1" xml:space="preserve">
+    <value>Confirm with ENTER</value>
+    <comment>TextBox</comment>
+  </data>
+  <data name="fmInventorylblInputText7" xml:space="preserve">
+    <value>Vendor LOT</value>
+  </data>
+  <data name="fmInventorylblInputText9" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="fmInventorylblInputText8" xml:space="preserve">
+    <value>Confirm new P-ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmInventoryMessage1" xml:space="preserve">
+    <value>P-ID dosn't exist</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage2" xml:space="preserve">
+    <value>Wrong P-ID Scanned</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage3" xml:space="preserve">
+    <value>Printing new P-ID label</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage4" xml:space="preserve">
+    <value>Bin not found</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage5" xml:space="preserve">
+    <value>bestbefore {0}{1}can't be before{2}{3}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWareneingangMessage8" xml:space="preserve">
+    <value>bestbefore {0}{1}can't be before{2}{3}</value>
+  </data>
+  <data name="fmLotSplitMessage4" xml:space="preserve">
+    <value>Quantity can't be more then {0}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmPIDInfoMessage1" xml:space="preserve">
+    <value>P-ID dosn't exist</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmWhseReceiptSingleMessage9" xml:space="preserve">
+    <value>Qty. to Receive is {0}{1} change it to {2}</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmInventoryMessage6" xml:space="preserve">
+    <value>Qty can't be less then 0</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmLotSplitDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmPickOrderDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmProdUmlagerungDecimals" xml:space="preserve">
+    <value>F0</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmUmlagerungDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmWhseReceiptSingleDecimals" xml:space="preserve">
+    <value>F2</value>
+    <comment>Format</comment>
+  </data>
+  <data name="fmInventoryMessage7" xml:space="preserve">
+    <value>Bin is not empty</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmUmlagerungMessage3" xml:space="preserve">
+    <value>Bin is not empty</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmComGolblHeaderText2" xml:space="preserve">
+    <value>Password</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmComGoMessage2" xml:space="preserve">
+    <value>Error changing printer</value>
+  </data>
+  <data name="fmComGoMessage3" xml:space="preserve">
+    <value>Printer changed</value>
+  </data>
+  <data name="fmWhseReceiptSingleMessage10" xml:space="preserve">
+    <value>Could not modify purchaseline</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage8" xml:space="preserve">
+    <value>Item not found</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage9" xml:space="preserve">
+    <value>Quantity can't be more than 1.000.000</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmInventoryMessage10" xml:space="preserve">
+    <value>Inventory is not allowed on this Bin.</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmComGolblHeaderText3" xml:space="preserve">
+    <value>Scan Printer ID</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmWhseReceiptSingleLabelInputText7" xml:space="preserve">
+    <value>ENTER To Continue</value>
+    <comment>Label</comment>
+  </data>
+  <data name="fmMessageCaption5" xml:space="preserve">
+    <value>Skal SLETTES</value>
+  </data>
+  <data name="fmWhseReceiptSingleMessage11" xml:space="preserve">
+    <value>There is {0} Lines on this document with out tracking code{1}Post the lines from a PC</value>
+    <comment>Message</comment>
+  </data>
+  <data name="fmProdUmlagerunglblInputText4" xml:space="preserve">
+    <value>Post</value>
+  </data>
+</root>

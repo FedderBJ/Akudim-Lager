@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsFormsApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowsFormsApplication1_WarehouseService_BalanceWarehouse" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Codeunit/BalanceWarehouse</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSWarehouseEmployee_WarehouseEmployee_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseEmployee</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSWarehouseReceipts_WhseReceiptList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WhseReceiptList</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSPurchaseOrderCard_PurchaseOrderCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PurchaseOrderCard</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSWarehouseReceiptLines_WarehouseReceiptLine_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseReceiptLine</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSPurchaseOrderList_PurchaseOrderList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PurchaseOrderList</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSDetailedUserInformation_DetailedUserInformation_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/DetailedUserInformation</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSUserInformation_UserInformation_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/UserInformation</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSItemBinContent_ItemBinContent_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/ItemBinContent</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSBinContent_BinContent_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/BinContent</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSPickList_PickList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PickList</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSPickLines_PickLines_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PickLines</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_TerminalPrinterList_TerminalPrinterList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/TerminalPrinterList</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSSalesOrderHeader_SalesOrderHeader_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesOrderHeader</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSSalesOrderLine_SalesOrderLine_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesOrderLine</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSWarehouseFright_WarehouseShipmentFright_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseShipmentFright</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSWhseShipHeaderList_WarehouseShipmentList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseShipmentList</Value>
+    </Setting>
+    <Setting Name="WindowsFormsApplication1_WSItemList_ItemListPage_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/ItemListPage</Value>
+    </Setting>
+    <Setting Name="Balance_Warehouse_WSSalesCommentLines_SalesCommentLines_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesCommentLines</Value>
+    </Setting>
+    <Setting Name="BalanceWarehouse_WSSalesReturnOrder_SalesReturnOrder_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesReturnOrder</Value>
+    </Setting>
+    <Setting Name="BalanceWarehouse_WSTestItemList_TestItem_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/TestItem</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="WsReturnServerInfo">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="sqlServerName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="sqlServerInstance" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="databaseUserName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="databaseCompany" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="languageCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="webURL" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WsReturnServerInfo_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="sqlServerName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="sqlServerInstance" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="databaseUserName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="databaseCompany" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="languageCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="webURL" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSEndProgramCode">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="tryCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSEndProgramCode_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnGeneralSetup">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="soundError" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="soundOK" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="errorMsg" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnGeneralSetup_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="soundError" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="soundOK" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="errorMsg" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSLotInfoExists">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="itemNoa46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lotNra46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vendorLota46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSLotInfoExists_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSLotInfoUsed">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lotNra46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSLotInfoUsed_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPIDExists">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lotNra46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPIDExists_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemExists">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemExists_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSBinExists">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="locationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="binCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSBinExists_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSBinIsEmpty">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="locationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="binCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSBinIsEmpty_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemQaSample">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="sampleQty" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="sampleUnitOfMeasure" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemQaSample_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="sampleQty" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="sampleUnitOfMeasure" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemUsesTracking">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemUsesTracking_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemUsesMhdTracking">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSItemUsesMhdTracking_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnItemDescription">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="no" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnItemDescription_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnItemUnitOfMesure">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="no" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="type" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnItemUnitOfMesure_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnLotInfo">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lotNra46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="location" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="bin" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNoa46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="description" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="quantity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="expiredate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="unitOfMesure" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vendorLot" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnLotInfo_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="bin" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNoa46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="description" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="quantity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="expiredate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="unitOfMesure" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vendorLot" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnMhdAndBinFromLot">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lotNra46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="location" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="bin" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mHD" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="qty" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="appEntry" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="regDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnMhdAndBinFromLot_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="bin" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mHD" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="qty" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="appEntry" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="regDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnItemNo">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pa45ID" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnItemNo_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnPrinterInfo">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="userId" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="locationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="printerName" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnPrinterInfo_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="printerName" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSSetPrinter">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="userId" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="locationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="newPrinter" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSSetPrinter_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSGetBinContentInformation">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="userId" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="p_LocationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="p_BinCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSGetBinContentInformation_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSGetItemBinInformation">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="userId" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="p_LocationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="p_ItemNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSGetItemBinInformation_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSGetItemCrossRef">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="refNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSGetItemCrossRef_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSInventoryAllowed">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lokation" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="placering" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSInventoryAllowed_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSIsFirstInventory">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="locationCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSIsFirstInventory_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnRemaningQuantity">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="kildetype" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="kildeNra46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNoa46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnRemaningQuantity_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnNewPID">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSReturnNewPID_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnRemaningQtyPickorder">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="docNoa46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSReturnRemaningQtyPickorder_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSFindCustomers">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="warehouse_Shipment_Noa46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSFindCustomers_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSWhsPostReceiptLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="kildetype" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="kildeNra46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNoa46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="modtagAntal" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="ma45Ha45D" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="lot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vendorLot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="lokation" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSWhsPostReceiptLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostPhysicalInventory">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="jnlTmpName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="jnlBatchName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vareNr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lok" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="plac" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qtyCount" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="unitOfMeasure" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="undladBogfa155ring" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="fysiskOptalt" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="ma45Ha45D" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="vendorBatch" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="datoTid" type="dateTime" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostPhysicalInventory_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostTransfer">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="jnlTmpName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="jnlBatchName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vareNr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="enhed" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fraLok" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fraPlac" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fraLot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tilLok" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tilPlac" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tilLot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="flytAntal" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="undladBogfa155ring" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="ma45Ha45D" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="datoTid" type="dateTime" />
+            <element minOccurs="1" maxOccurs="1" name="udlignendeNr" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostTransfer_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostPickOrder">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lDocNoa46" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lLineNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="lSourceLineNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="lItemNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lQuantity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="lLot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lBin" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostPickOrder_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSPostWarehouseShipment">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="shipmentNoa46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostWarehouseShipment_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostLotSplit">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="jnlTmpName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="jnlBatchName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vareNr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="unitOfMesure" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fraLok" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fraPlac" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fraLot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tilLok" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tilPlac" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tilLot" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="flytAntal" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="undladBogfa155ring" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="ma45Ha45D" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="datoTid" type="dateTime" />
+            <element minOccurs="1" maxOccurs="1" name="vendorLot" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPostLotSplit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintPid">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintPid_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintPidPrev">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemnoPr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="quantityPr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mHDPr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vendorlotPr" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="enhedPr" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintPidPrev_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintWarehouseShipment">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="shipmentNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintWarehouseShipment_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSPDFMailOrderConfirmation">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="orderNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="intValue" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPDFMailOrderConfirmation_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSPrintItemLabel">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qty" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintItemLabel_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSPrintBinLabel">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="binCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qty" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSPrintBinLabel_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="WSAddQuantityToPurchaseOrder">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="orderNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="addQuantity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="unitOfMesure" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSAddQuantityToPurchaseOrder_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateWarehouseInboundDoc">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pa45Order" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateWarehouseInboundDoc_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSBlockLotNo">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pa45ID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="datoTid" type="dateTime" />
+            <element minOccurs="1" maxOccurs="1" name="reason" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="block" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSBlockLotNo_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSSetDefaultBin">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="locationCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="binCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="itemNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="unitCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="std" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSSetDefaultBin_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateLotInfoClean">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="lotNra46" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateLotInfoClean_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateSalesCommentLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="documentType" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="documentNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="commentTxt" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="WSCreateSalesCommentLine_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="WsReturnServerInfo">
+    <part name="parameters" element="tns:WsReturnServerInfo" />
+  </message>
+  <message name="WsReturnServerInfo_Result">
+    <part name="parameters" element="tns:WsReturnServerInfo_Result" />
+  </message>
+  <message name="WSEndProgramCode">
+    <part name="parameters" element="tns:WSEndProgramCode" />
+  </message>
+  <message name="WSEndProgramCode_Result">
+    <part name="parameters" element="tns:WSEndProgramCode_Result" />
+  </message>
+  <message name="WSReturnGeneralSetup">
+    <part name="parameters" element="tns:WSReturnGeneralSetup" />
+  </message>
+  <message name="WSReturnGeneralSetup_Result">
+    <part name="parameters" element="tns:WSReturnGeneralSetup_Result" />
+  </message>
+  <message name="WSLotInfoExists">
+    <part name="parameters" element="tns:WSLotInfoExists" />
+  </message>
+  <message name="WSLotInfoExists_Result">
+    <part name="parameters" element="tns:WSLotInfoExists_Result" />
+  </message>
+  <message name="WSLotInfoUsed">
+    <part name="parameters" element="tns:WSLotInfoUsed" />
+  </message>
+  <message name="WSLotInfoUsed_Result">
+    <part name="parameters" element="tns:WSLotInfoUsed_Result" />
+  </message>
+  <message name="WSPIDExists">
+    <part name="parameters" element="tns:WSPIDExists" />
+  </message>
+  <message name="WSPIDExists_Result">
+    <part name="parameters" element="tns:WSPIDExists_Result" />
+  </message>
+  <message name="WSItemExists">
+    <part name="parameters" element="tns:WSItemExists" />
+  </message>
+  <message name="WSItemExists_Result">
+    <part name="parameters" element="tns:WSItemExists_Result" />
+  </message>
+  <message name="WSBinExists">
+    <part name="parameters" element="tns:WSBinExists" />
+  </message>
+  <message name="WSBinExists_Result">
+    <part name="parameters" element="tns:WSBinExists_Result" />
+  </message>
+  <message name="WSBinIsEmpty">
+    <part name="parameters" element="tns:WSBinIsEmpty" />
+  </message>
+  <message name="WSBinIsEmpty_Result">
+    <part name="parameters" element="tns:WSBinIsEmpty_Result" />
+  </message>
+  <message name="WSItemQaSample">
+    <part name="parameters" element="tns:WSItemQaSample" />
+  </message>
+  <message name="WSItemQaSample_Result">
+    <part name="parameters" element="tns:WSItemQaSample_Result" />
+  </message>
+  <message name="WSItemUsesTracking">
+    <part name="parameters" element="tns:WSItemUsesTracking" />
+  </message>
+  <message name="WSItemUsesTracking_Result">
+    <part name="parameters" element="tns:WSItemUsesTracking_Result" />
+  </message>
+  <message name="WSItemUsesMhdTracking">
+    <part name="parameters" element="tns:WSItemUsesMhdTracking" />
+  </message>
+  <message name="WSItemUsesMhdTracking_Result">
+    <part name="parameters" element="tns:WSItemUsesMhdTracking_Result" />
+  </message>
+  <message name="WSReturnItemDescription">
+    <part name="parameters" element="tns:WSReturnItemDescription" />
+  </message>
+  <message name="WSReturnItemDescription_Result">
+    <part name="parameters" element="tns:WSReturnItemDescription_Result" />
+  </message>
+  <message name="WSReturnItemUnitOfMesure">
+    <part name="parameters" element="tns:WSReturnItemUnitOfMesure" />
+  </message>
+  <message name="WSReturnItemUnitOfMesure_Result">
+    <part name="parameters" element="tns:WSReturnItemUnitOfMesure_Result" />
+  </message>
+  <message name="WSReturnLotInfo">
+    <part name="parameters" element="tns:WSReturnLotInfo" />
+  </message>
+  <message name="WSReturnLotInfo_Result">
+    <part name="parameters" element="tns:WSReturnLotInfo_Result" />
+  </message>
+  <message name="WSReturnMhdAndBinFromLot">
+    <part name="parameters" element="tns:WSReturnMhdAndBinFromLot" />
+  </message>
+  <message name="WSReturnMhdAndBinFromLot_Result">
+    <part name="parameters" element="tns:WSReturnMhdAndBinFromLot_Result" />
+  </message>
+  <message name="WSReturnItemNo">
+    <part name="parameters" element="tns:WSReturnItemNo" />
+  </message>
+  <message name="WSReturnItemNo_Result">
+    <part name="parameters" element="tns:WSReturnItemNo_Result" />
+  </message>
+  <message name="WSReturnPrinterInfo">
+    <part name="parameters" element="tns:WSReturnPrinterInfo" />
+  </message>
+  <message name="WSReturnPrinterInfo_Result">
+    <part name="parameters" element="tns:WSReturnPrinterInfo_Result" />
+  </message>
+  <message name="WSSetPrinter">
+    <part name="parameters" element="tns:WSSetPrinter" />
+  </message>
+  <message name="WSSetPrinter_Result">
+    <part name="parameters" element="tns:WSSetPrinter_Result" />
+  </message>
+  <message name="WSGetBinContentInformation">
+    <part name="parameters" element="tns:WSGetBinContentInformation" />
+  </message>
+  <message name="WSGetBinContentInformation_Result">
+    <part name="parameters" element="tns:WSGetBinContentInformation_Result" />
+  </message>
+  <message name="WSGetItemBinInformation">
+    <part name="parameters" element="tns:WSGetItemBinInformation" />
+  </message>
+  <message name="WSGetItemBinInformation_Result">
+    <part name="parameters" element="tns:WSGetItemBinInformation_Result" />
+  </message>
+  <message name="WSGetItemCrossRef">
+    <part name="parameters" element="tns:WSGetItemCrossRef" />
+  </message>
+  <message name="WSGetItemCrossRef_Result">
+    <part name="parameters" element="tns:WSGetItemCrossRef_Result" />
+  </message>
+  <message name="WSInventoryAllowed">
+    <part name="parameters" element="tns:WSInventoryAllowed" />
+  </message>
+  <message name="WSInventoryAllowed_Result">
+    <part name="parameters" element="tns:WSInventoryAllowed_Result" />
+  </message>
+  <message name="WSIsFirstInventory">
+    <part name="parameters" element="tns:WSIsFirstInventory" />
+  </message>
+  <message name="WSIsFirstInventory_Result">
+    <part name="parameters" element="tns:WSIsFirstInventory_Result" />
+  </message>
+  <message name="WSReturnRemaningQuantity">
+    <part name="parameters" element="tns:WSReturnRemaningQuantity" />
+  </message>
+  <message name="WSReturnRemaningQuantity_Result">
+    <part name="parameters" element="tns:WSReturnRemaningQuantity_Result" />
+  </message>
+  <message name="WSReturnNewPID">
+    <part name="parameters" element="tns:WSReturnNewPID" />
+  </message>
+  <message name="WSReturnNewPID_Result">
+    <part name="parameters" element="tns:WSReturnNewPID_Result" />
+  </message>
+  <message name="WSReturnRemaningQtyPickorder">
+    <part name="parameters" element="tns:WSReturnRemaningQtyPickorder" />
+  </message>
+  <message name="WSReturnRemaningQtyPickorder_Result">
+    <part name="parameters" element="tns:WSReturnRemaningQtyPickorder_Result" />
+  </message>
+  <message name="WSFindCustomers">
+    <part name="parameters" element="tns:WSFindCustomers" />
+  </message>
+  <message name="WSFindCustomers_Result">
+    <part name="parameters" element="tns:WSFindCustomers_Result" />
+  </message>
+  <message name="WSWhsPostReceiptLine">
+    <part name="parameters" element="tns:WSWhsPostReceiptLine" />
+  </message>
+  <message name="WSWhsPostReceiptLine_Result">
+    <part name="parameters" element="tns:WSWhsPostReceiptLine_Result" />
+  </message>
+  <message name="WSPostPhysicalInventory">
+    <part name="parameters" element="tns:WSPostPhysicalInventory" />
+  </message>
+  <message name="WSPostPhysicalInventory_Result">
+    <part name="parameters" element="tns:WSPostPhysicalInventory_Result" />
+  </message>
+  <message name="WSPostTransfer">
+    <part name="parameters" element="tns:WSPostTransfer" />
+  </message>
+  <message name="WSPostTransfer_Result">
+    <part name="parameters" element="tns:WSPostTransfer_Result" />
+  </message>
+  <message name="WSPostPickOrder">
+    <part name="parameters" element="tns:WSPostPickOrder" />
+  </message>
+  <message name="WSPostPickOrder_Result">
+    <part name="parameters" element="tns:WSPostPickOrder_Result" />
+  </message>
+  <message name="WSPostWarehouseShipment">
+    <part name="parameters" element="tns:WSPostWarehouseShipment" />
+  </message>
+  <message name="WSPostWarehouseShipment_Result">
+    <part name="parameters" element="tns:WSPostWarehouseShipment_Result" />
+  </message>
+  <message name="WSPostLotSplit">
+    <part name="parameters" element="tns:WSPostLotSplit" />
+  </message>
+  <message name="WSPostLotSplit_Result">
+    <part name="parameters" element="tns:WSPostLotSplit_Result" />
+  </message>
+  <message name="WSPrintPid">
+    <part name="parameters" element="tns:WSPrintPid" />
+  </message>
+  <message name="WSPrintPid_Result">
+    <part name="parameters" element="tns:WSPrintPid_Result" />
+  </message>
+  <message name="WSPrintPidPrev">
+    <part name="parameters" element="tns:WSPrintPidPrev" />
+  </message>
+  <message name="WSPrintPidPrev_Result">
+    <part name="parameters" element="tns:WSPrintPidPrev_Result" />
+  </message>
+  <message name="WSPrintWarehouseShipment">
+    <part name="parameters" element="tns:WSPrintWarehouseShipment" />
+  </message>
+  <message name="WSPrintWarehouseShipment_Result">
+    <part name="parameters" element="tns:WSPrintWarehouseShipment_Result" />
+  </message>
+  <message name="WSPDFMailOrderConfirmation">
+    <part name="parameters" element="tns:WSPDFMailOrderConfirmation" />
+  </message>
+  <message name="WSPDFMailOrderConfirmation_Result">
+    <part name="parameters" element="tns:WSPDFMailOrderConfirmation_Result" />
+  </message>
+  <message name="WSPrintItemLabel">
+    <part name="parameters" element="tns:WSPrintItemLabel" />
+  </message>
+  <message name="WSPrintItemLabel_Result">
+    <part name="parameters" element="tns:WSPrintItemLabel_Result" />
+  </message>
+  <message name="WSPrintBinLabel">
+    <part name="parameters" element="tns:WSPrintBinLabel" />
+  </message>
+  <message name="WSPrintBinLabel_Result">
+    <part name="parameters" element="tns:WSPrintBinLabel_Result" />
+  </message>
+  <message name="WSAddQuantityToPurchaseOrder">
+    <part name="parameters" element="tns:WSAddQuantityToPurchaseOrder" />
+  </message>
+  <message name="WSAddQuantityToPurchaseOrder_Result">
+    <part name="parameters" element="tns:WSAddQuantityToPurchaseOrder_Result" />
+  </message>
+  <message name="WSCreateWarehouseInboundDoc">
+    <part name="parameters" element="tns:WSCreateWarehouseInboundDoc" />
+  </message>
+  <message name="WSCreateWarehouseInboundDoc_Result">
+    <part name="parameters" element="tns:WSCreateWarehouseInboundDoc_Result" />
+  </message>
+  <message name="WSBlockLotNo">
+    <part name="parameters" element="tns:WSBlockLotNo" />
+  </message>
+  <message name="WSBlockLotNo_Result">
+    <part name="parameters" element="tns:WSBlockLotNo_Result" />
+  </message>
+  <message name="WSSetDefaultBin">
+    <part name="parameters" element="tns:WSSetDefaultBin" />
+  </message>
+  <message name="WSSetDefaultBin_Result">
+    <part name="parameters" element="tns:WSSetDefaultBin_Result" />
+  </message>
+  <message name="WSCreateLotInfoClean">
+    <part name="parameters" element="tns:WSCreateLotInfoClean" />
+  </message>
+  <message name="WSCreateLotInfoClean_Result">
+    <part name="parameters" element="tns:WSCreateLotInfoClean_Result" />
+  </message>
+  <message name="WSCreateSalesCommentLine">
+    <part name="parameters" element="tns:WSCreateSalesCommentLine" />
+  </message>
+  <message name="WSCreateSalesCommentLine_Result">
+    <part name="parameters" element="tns:WSCreateSalesCommentLine_Result" />
+  </message>
+  <portType name="BalanceWarehouse_Port">
+    <operation name="WsReturnServerInfo">
+      <input name="WsReturnServerInfo" message="tns:WsReturnServerInfo" />
+      <output name="WsReturnServerInfo_Result" message="tns:WsReturnServerInfo_Result" />
+    </operation>
+    <operation name="WSEndProgramCode">
+      <input name="WSEndProgramCode" message="tns:WSEndProgramCode" />
+      <output name="WSEndProgramCode_Result" message="tns:WSEndProgramCode_Result" />
+    </operation>
+    <operation name="WSReturnGeneralSetup">
+      <input name="WSReturnGeneralSetup" message="tns:WSReturnGeneralSetup" />
+      <output name="WSReturnGeneralSetup_Result" message="tns:WSReturnGeneralSetup_Result" />
+    </operation>
+    <operation name="WSLotInfoExists">
+      <input name="WSLotInfoExists" message="tns:WSLotInfoExists" />
+      <output name="WSLotInfoExists_Result" message="tns:WSLotInfoExists_Result" />
+    </operation>
+    <operation name="WSLotInfoUsed">
+      <input name="WSLotInfoUsed" message="tns:WSLotInfoUsed" />
+      <output name="WSLotInfoUsed_Result" message="tns:WSLotInfoUsed_Result" />
+    </operation>
+    <operation name="WSPIDExists">
+      <input name="WSPIDExists" message="tns:WSPIDExists" />
+      <output name="WSPIDExists_Result" message="tns:WSPIDExists_Result" />
+    </operation>
+    <operation name="WSItemExists">
+      <input name="WSItemExists" message="tns:WSItemExists" />
+      <output name="WSItemExists_Result" message="tns:WSItemExists_Result" />
+    </operation>
+    <operation name="WSBinExists">
+      <input name="WSBinExists" message="tns:WSBinExists" />
+      <output name="WSBinExists_Result" message="tns:WSBinExists_Result" />
+    </operation>
+    <operation name="WSBinIsEmpty">
+      <input name="WSBinIsEmpty" message="tns:WSBinIsEmpty" />
+      <output name="WSBinIsEmpty_Result" message="tns:WSBinIsEmpty_Result" />
+    </operation>
+    <operation name="WSItemQaSample">
+      <input name="WSItemQaSample" message="tns:WSItemQaSample" />
+      <output name="WSItemQaSample_Result" message="tns:WSItemQaSample_Result" />
+    </operation>
+    <operation name="WSItemUsesTracking">
+      <input name="WSItemUsesTracking" message="tns:WSItemUsesTracking" />
+      <output name="WSItemUsesTracking_Result" message="tns:WSItemUsesTracking_Result" />
+    </operation>
+    <operation name="WSItemUsesMhdTracking">
+      <input name="WSItemUsesMhdTracking" message="tns:WSItemUsesMhdTracking" />
+      <output name="WSItemUsesMhdTracking_Result" message="tns:WSItemUsesMhdTracking_Result" />
+    </operation>
+    <operation name="WSReturnItemDescription">
+      <input name="WSReturnItemDescription" message="tns:WSReturnItemDescription" />
+      <output name="WSReturnItemDescription_Result" message="tns:WSReturnItemDescription_Result" />
+    </operation>
+    <operation name="WSReturnItemUnitOfMesure">
+      <input name="WSReturnItemUnitOfMesure" message="tns:WSReturnItemUnitOfMesure" />
+      <output name="WSReturnItemUnitOfMesure_Result" message="tns:WSReturnItemUnitOfMesure_Result" />
+    </operation>
+    <operation name="WSReturnLotInfo">
+      <input name="WSReturnLotInfo" message="tns:WSReturnLotInfo" />
+      <output name="WSReturnLotInfo_Result" message="tns:WSReturnLotInfo_Result" />
+    </operation>
+    <operation name="WSReturnMhdAndBinFromLot">
+      <input name="WSReturnMhdAndBinFromLot" message="tns:WSReturnMhdAndBinFromLot" />
+      <output name="WSReturnMhdAndBinFromLot_Result" message="tns:WSReturnMhdAndBinFromLot_Result" />
+    </operation>
+    <operation name="WSReturnItemNo">
+      <input name="WSReturnItemNo" message="tns:WSReturnItemNo" />
+      <output name="WSReturnItemNo_Result" message="tns:WSReturnItemNo_Result" />
+    </operation>
+    <operation name="WSReturnPrinterInfo">
+      <input name="WSReturnPrinterInfo" message="tns:WSReturnPrinterInfo" />
+      <output name="WSReturnPrinterInfo_Result" message="tns:WSReturnPrinterInfo_Result" />
+    </operation>
+    <operation name="WSSetPrinter">
+      <input name="WSSetPrinter" message="tns:WSSetPrinter" />
+      <output name="WSSetPrinter_Result" message="tns:WSSetPrinter_Result" />
+    </operation>
+    <operation name="WSGetBinContentInformation">
+      <input name="WSGetBinContentInformation" message="tns:WSGetBinContentInformation" />
+      <output name="WSGetBinContentInformation_Result" message="tns:WSGetBinContentInformation_Result" />
+    </operation>
+    <operation name="WSGetItemBinInformation">
+      <input name="WSGetItemBinInformation" message="tns:WSGetItemBinInformation" />
+      <output name="WSGetItemBinInformation_Result" message="tns:WSGetItemBinInformation_Result" />
+    </operation>
+    <operation name="WSGetItemCrossRef">
+      <input name="WSGetItemCrossRef" message="tns:WSGetItemCrossRef" />
+      <output name="WSGetItemCrossRef_Result" message="tns:WSGetItemCrossRef_Result" />
+    </operation>
+    <operation name="WSInventoryAllowed">
+      <input name="WSInventoryAllowed" message="tns:WSInventoryAllowed" />
+      <output name="WSInventoryAllowed_Result" message="tns:WSInventoryAllowed_Result" />
+    </operation>
+    <operation name="WSIsFirstInventory">
+      <input name="WSIsFirstInventory" message="tns:WSIsFirstInventory" />
+      <output name="WSIsFirstInventory_Result" message="tns:WSIsFirstInventory_Result" />
+    </operation>
+    <operation name="WSReturnRemaningQuantity">
+      <input name="WSReturnRemaningQuantity" message="tns:WSReturnRemaningQuantity" />
+      <output name="WSReturnRemaningQuantity_Result" message="tns:WSReturnRemaningQuantity_Result" />
+    </operation>
+    <operation name="WSReturnNewPID">
+      <input name="WSReturnNewPID" message="tns:WSReturnNewPID" />
+      <output name="WSReturnNewPID_Result" message="tns:WSReturnNewPID_Result" />
+    </operation>
+    <operation name="WSReturnRemaningQtyPickorder">
+      <input name="WSReturnRemaningQtyPickorder" message="tns:WSReturnRemaningQtyPickorder" />
+      <output name="WSReturnRemaningQtyPickorder_Result" message="tns:WSReturnRemaningQtyPickorder_Result" />
+    </operation>
+    <operation name="WSFindCustomers">
+      <input name="WSFindCustomers" message="tns:WSFindCustomers" />
+      <output name="WSFindCustomers_Result" message="tns:WSFindCustomers_Result" />
+    </operation>
+    <operation name="WSWhsPostReceiptLine">
+      <input name="WSWhsPostReceiptLine" message="tns:WSWhsPostReceiptLine" />
+      <output name="WSWhsPostReceiptLine_Result" message="tns:WSWhsPostReceiptLine_Result" />
+    </operation>
+    <operation name="WSPostPhysicalInventory">
+      <input name="WSPostPhysicalInventory" message="tns:WSPostPhysicalInventory" />
+      <output name="WSPostPhysicalInventory_Result" message="tns:WSPostPhysicalInventory_Result" />
+    </operation>
+    <operation name="WSPostTransfer">
+      <input name="WSPostTransfer" message="tns:WSPostTransfer" />
+      <output name="WSPostTransfer_Result" message="tns:WSPostTransfer_Result" />
+    </operation>
+    <operation name="WSPostPickOrder">
+      <input name="WSPostPickOrder" message="tns:WSPostPickOrder" />
+      <output name="WSPostPickOrder_Result" message="tns:WSPostPickOrder_Result" />
+    </operation>
+    <operation name="WSPostWarehouseShipment">
+      <input name="WSPostWarehouseShipment" message="tns:WSPostWarehouseShipment" />
+      <output name="WSPostWarehouseShipment_Result" message="tns:WSPostWarehouseShipment_Result" />
+    </operation>
+    <operation name="WSPostLotSplit">
+      <input name="WSPostLotSplit" message="tns:WSPostLotSplit" />
+      <output name="WSPostLotSplit_Result" message="tns:WSPostLotSplit_Result" />
+    </operation>
+    <operation name="WSPrintPid">
+      <input name="WSPrintPid" message="tns:WSPrintPid" />
+      <output name="WSPrintPid_Result" message="tns:WSPrintPid_Result" />
+    </operation>
+    <operation name="WSPrintPidPrev">
+      <input name="WSPrintPidPrev" message="tns:WSPrintPidPrev" />
+      <output name="WSPrintPidPrev_Result" message="tns:WSPrintPidPrev_Result" />
+    </operation>
+    <operation name="WSPrintWarehouseShipment">
+      <input name="WSPrintWarehouseShipment" message="tns:WSPrintWarehouseShipment" />
+      <output name="WSPrintWarehouseShipment_Result" message="tns:WSPrintWarehouseShipment_Result" />
+    </operation>
+    <operation name="WSPDFMailOrderConfirmation">
+      <input name="WSPDFMailOrderConfirmation" message="tns:WSPDFMailOrderConfirmation" />
+      <output name="WSPDFMailOrderConfirmation_Result" message="tns:WSPDFMailOrderConfirmation_Result" />
+    </operation>
+    <operation name="WSPrintItemLabel">
+      <input name="WSPrintItemLabel" message="tns:WSPrintItemLabel" />
+      <output name="WSPrintItemLabel_Result" message="tns:WSPrintItemLabel_Result" />
+    </operation>
+    <operation name="WSPrintBinLabel">
+      <input name="WSPrintBinLabel" message="tns:WSPrintBinLabel" />
+      <output name="WSPrintBinLabel_Result" message="tns:WSPrintBinLabel_Result" />
+    </operation>
+    <operation name="WSAddQuantityToPurchaseOrder">
+      <input name="WSAddQuantityToPurchaseOrder" message="tns:WSAddQuantityToPurchaseOrder" />
+      <output name="WSAddQuantityToPurchaseOrder_Result" message="tns:WSAddQuantityToPurchaseOrder_Result" />
+    </operation>
+    <operation name="WSCreateWarehouseInboundDoc">
+      <input name="WSCreateWarehouseInboundDoc" message="tns:WSCreateWarehouseInboundDoc" />
+      <output name="WSCreateWarehouseInboundDoc_Result" message="tns:WSCreateWarehouseInboundDoc_Result" />
+    </operation>
+    <operation name="WSBlockLotNo">
+      <input name="WSBlockLotNo" message="tns:WSBlockLotNo" />
+      <output name="WSBlockLotNo_Result" message="tns:WSBlockLotNo_Result" />
+    </operation>
+    <operation name="WSSetDefaultBin">
+      <input name="WSSetDefaultBin" message="tns:WSSetDefaultBin" />
+      <output name="WSSetDefaultBin_Result" message="tns:WSSetDefaultBin_Result" />
+    </operation>
+    <operation name="WSCreateLotInfoClean">
+      <input name="WSCreateLotInfoClean" message="tns:WSCreateLotInfoClean" />
+      <output name="WSCreateLotInfoClean_Result" message="tns:WSCreateLotInfoClean_Result" />
+    </operation>
+    <operation name="WSCreateSalesCommentLine">
+      <input name="WSCreateSalesCommentLine" message="tns:WSCreateSalesCommentLine" />
+      <output name="WSCreateSalesCommentLine_Result" message="tns:WSCreateSalesCommentLine_Result" />
+    </operation>
+  </portType>
+  <binding name="BalanceWarehouse_Binding" type="tns:BalanceWarehouse_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="WsReturnServerInfo">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WsReturnServerInfo" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WsReturnServerInfo">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WsReturnServerInfo_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSEndProgramCode">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSEndProgramCode" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSEndProgramCode">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSEndProgramCode_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnGeneralSetup">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnGeneralSetup" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnGeneralSetup">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnGeneralSetup_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSLotInfoExists">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSLotInfoExists" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSLotInfoExists">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSLotInfoExists_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSLotInfoUsed">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSLotInfoUsed" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSLotInfoUsed">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSLotInfoUsed_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPIDExists">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPIDExists" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPIDExists">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPIDExists_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSItemExists">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSItemExists" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSItemExists">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSItemExists_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSBinExists">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSBinExists" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSBinExists">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSBinExists_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSBinIsEmpty">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSBinIsEmpty" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSBinIsEmpty">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSBinIsEmpty_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSItemQaSample">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSItemQaSample" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSItemQaSample">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSItemQaSample_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSItemUsesTracking">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSItemUsesTracking" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSItemUsesTracking">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSItemUsesTracking_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSItemUsesMhdTracking">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSItemUsesMhdTracking" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSItemUsesMhdTracking">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSItemUsesMhdTracking_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnItemDescription">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnItemDescription" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnItemDescription">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnItemDescription_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnItemUnitOfMesure">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnItemUnitOfMesure" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnItemUnitOfMesure">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnItemUnitOfMesure_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnLotInfo">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnLotInfo" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnLotInfo">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnLotInfo_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnMhdAndBinFromLot">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnMhdAndBinFromLot" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnMhdAndBinFromLot">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnMhdAndBinFromLot_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnItemNo">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnItemNo" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnItemNo">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnItemNo_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnPrinterInfo">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnPrinterInfo" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnPrinterInfo">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnPrinterInfo_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSSetPrinter">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSSetPrinter" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSSetPrinter">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSSetPrinter_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSGetBinContentInformation">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSGetBinContentInformation" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSGetBinContentInformation">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSGetBinContentInformation_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSGetItemBinInformation">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSGetItemBinInformation" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSGetItemBinInformation">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSGetItemBinInformation_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSGetItemCrossRef">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSGetItemCrossRef" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSGetItemCrossRef">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSGetItemCrossRef_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSInventoryAllowed">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSInventoryAllowed" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSInventoryAllowed">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSInventoryAllowed_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSIsFirstInventory">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSIsFirstInventory" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSIsFirstInventory">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSIsFirstInventory_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnRemaningQuantity">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnRemaningQuantity" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnRemaningQuantity">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnRemaningQuantity_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnNewPID">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnNewPID" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnNewPID">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnNewPID_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSReturnRemaningQtyPickorder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSReturnRemaningQtyPickorder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSReturnRemaningQtyPickorder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSReturnRemaningQtyPickorder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSFindCustomers">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSFindCustomers" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSFindCustomers">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSFindCustomers_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSWhsPostReceiptLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSWhsPostReceiptLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSWhsPostReceiptLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSWhsPostReceiptLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPostPhysicalInventory">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPostPhysicalInventory" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPostPhysicalInventory">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPostPhysicalInventory_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPostTransfer">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPostTransfer" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPostTransfer">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPostTransfer_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPostPickOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPostPickOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPostPickOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPostPickOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPostWarehouseShipment">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPostWarehouseShipment" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPostWarehouseShipment">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPostWarehouseShipment_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPostLotSplit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPostLotSplit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPostLotSplit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPostLotSplit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPrintPid">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPrintPid" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPrintPid">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPrintPid_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPrintPidPrev">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPrintPidPrev" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPrintPidPrev">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPrintPidPrev_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPrintWarehouseShipment">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPrintWarehouseShipment" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPrintWarehouseShipment">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPrintWarehouseShipment_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPDFMailOrderConfirmation">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPDFMailOrderConfirmation" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPDFMailOrderConfirmation">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPDFMailOrderConfirmation_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPrintItemLabel">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPrintItemLabel" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPrintItemLabel">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPrintItemLabel_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSPrintBinLabel">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSPrintBinLabel" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSPrintBinLabel">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSPrintBinLabel_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSAddQuantityToPurchaseOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSAddQuantityToPurchaseOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSAddQuantityToPurchaseOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSAddQuantityToPurchaseOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSCreateWarehouseInboundDoc">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSCreateWarehouseInboundDoc" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSCreateWarehouseInboundDoc">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSCreateWarehouseInboundDoc_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSBlockLotNo">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSBlockLotNo" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSBlockLotNo">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSBlockLotNo_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSSetDefaultBin">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSSetDefaultBin" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSSetDefaultBin">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSSetDefaultBin_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSCreateLotInfoClean">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSCreateLotInfoClean" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSCreateLotInfoClean">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSCreateLotInfoClean_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="WSCreateSalesCommentLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/BalanceWarehouse:WSCreateSalesCommentLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="WSCreateSalesCommentLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="WSCreateSalesCommentLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BalanceWarehouse">
+    <port name="BalanceWarehouse_Port" binding="tns:BalanceWarehouse_Binding">
+      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Codeunit/BalanceWarehouse" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>
