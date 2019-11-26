@@ -107,7 +107,7 @@ namespace WindowsFormsApplication1
             ItemFilter.Criteria = itemno;
             BincontentFilterArray.Add(ItemFilter);
 
-            ItemBinContent[] Details = bincontentservice.ReadMultiple(BincontentFilterArray.ToArray(), "", 1000);
+            ItemBinContent[] Details = bincontentservice.ReadMultiple(BincontentFilterArray.ToArray(), "", 100);
 
             if (Details.Count() > 0)
             {
@@ -138,7 +138,7 @@ namespace WindowsFormsApplication1
             DefaultFilter.Criteria = true.ToString();
             BincontentFilterArray.Add(DefaultFilter);
 
-            ItemBinContent[] Details = bincontentservice.ReadMultiple(BincontentFilterArray.ToArray(), "", 1000);
+            ItemBinContent[] Details = bincontentservice.ReadMultiple(BincontentFilterArray.ToArray(), "", 10);
 
             if (Details.Count() > 0)
             {

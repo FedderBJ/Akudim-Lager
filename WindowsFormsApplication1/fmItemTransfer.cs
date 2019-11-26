@@ -164,6 +164,7 @@ namespace WindowsFormsApplication1
                                     catch (Exception ex)
                                     {
                                         MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
+                                        break;
                                     }
                                 }
                             }
@@ -219,14 +220,8 @@ namespace WindowsFormsApplication1
 
                                 MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
                             }
-                            finally
-                            {
-                                this.pbIndicator.Image = null;
-                                this.pbIndicator.Visible = false;
-
-                                this.Close();
-                                Globals.GlobalStep = 0;
-                            }
+                            this.Close();
+                            Globals.GlobalStep = 0;
                         }
                         break;
                 }

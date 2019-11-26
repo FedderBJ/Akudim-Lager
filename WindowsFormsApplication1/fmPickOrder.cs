@@ -554,10 +554,6 @@ namespace WindowsFormsApplication1
                                 WarehouseActivityLineList.RemoveAt(WhaLineIndex);
                                 if (WhaLineIndex > 0)
                                   WhaLineIndex--;
-                                //if (WhaLineIndex < (WarehouseActivityLineList.Count() -1))
-                                //{
-                                //    WhaLineIndex++;
-                                //}
                                 NoOfLines--;
                                 lbLines.Text = string.Format("{0} af {1}", 1, NoOfLines.ToString());
                                 
@@ -701,6 +697,11 @@ namespace WindowsFormsApplication1
         private void lbBincode_Click(object sender, EventArgs e)
         {
             tbInputData.Text = lbBincode.Text;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
