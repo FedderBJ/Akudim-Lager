@@ -387,7 +387,7 @@
   </binding>
   <service name="UserInformation_Service">
     <port name="UserInformation_Port" binding="tns:UserInformation_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/UserInformation" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/UserInformation" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.3.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Codeunit/BalanceWarehouse")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Codeunit/BalanceWarehouse")]
         public string WindowsFormsApplication1_WarehouseService_BalanceWarehouse {
             get {
                 return ((string)(this["WindowsFormsApplication1_WarehouseService_BalanceWarehouse"]));
@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseEmployee")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WarehouseEmployee")]
         public string WindowsFormsApplication1_WSWarehouseEmployee_WarehouseEmployee_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSWarehouseEmployee_WarehouseEmployee_Service"]));
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WhseReceiptList")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WhseReceiptList")]
         public string WindowsFormsApplication1_WSWarehouseReceipts_WhseReceiptList_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSWarehouseReceipts_WhseReceiptList_Service"]));
@@ -56,7 +56,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PurchaseOrderCard")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/PurchaseOrderCard")]
         public string WindowsFormsApplication1_WSPurchaseOrderCard_PurchaseOrderCard_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSPurchaseOrderCard_PurchaseOrderCard_Service"]));
@@ -66,7 +66,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseReceiptLine")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WarehouseReceiptLine")]
         public string WindowsFormsApplication1_WSWarehouseReceiptLines_WarehouseReceiptLine_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSWarehouseReceiptLines_WarehouseReceiptLine_Service"]));
@@ -76,7 +76,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PurchaseOrderList")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/PurchaseOrderList")]
         public string WindowsFormsApplication1_WSPurchaseOrderList_PurchaseOrderList_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSPurchaseOrderList_PurchaseOrderList_Service"]));
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/DetailedUserInformation")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/DetailedUserInformation")]
         public string WindowsFormsApplication1_WSDetailedUserInformation_DetailedUserInformation_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSDetailedUserInformation_DetailedUserInformation_Servic" +
@@ -97,7 +97,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/UserInformation")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/UserInformation")]
         public string WindowsFormsApplication1_WSUserInformation_UserInformation_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSUserInformation_UserInformation_Service"]));
@@ -107,7 +107,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/ItemBinContent")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/ItemBinContent")]
         public string WindowsFormsApplication1_WSItemBinContent_ItemBinContent_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSItemBinContent_ItemBinContent_Service"]));
@@ -117,7 +117,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/BinContent")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/BinContent")]
         public string WindowsFormsApplication1_WSBinContent_BinContent_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSBinContent_BinContent_Service"]));
@@ -127,7 +127,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PickList")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/PickList")]
         public string WindowsFormsApplication1_WSPickList_PickList_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSPickList_PickList_Service"]));
@@ -137,7 +137,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/PickLines")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/PickLines")]
         public string WindowsFormsApplication1_WSPickLines_PickLines_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSPickLines_PickLines_Service"]));
@@ -147,7 +147,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/TerminalPrinterList")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/TerminalPrinterList")]
         public string WindowsFormsApplication1_TerminalPrinterList_TerminalPrinterList_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_TerminalPrinterList_TerminalPrinterList_Service"]));
@@ -157,7 +157,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesOrderHeader")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/SalesOrderHeader")]
         public string WindowsFormsApplication1_WSSalesOrderHeader_SalesOrderHeader_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSSalesOrderHeader_SalesOrderHeader_Service"]));
@@ -167,7 +167,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesOrderLine")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/SalesOrderLine")]
         public string WindowsFormsApplication1_WSSalesOrderLine_SalesOrderLine_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSSalesOrderLine_SalesOrderLine_Service"]));
@@ -177,7 +177,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseShipmentFright")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WarehouseShipmentFright")]
         public string WindowsFormsApplication1_WSWarehouseFright_WarehouseShipmentFright_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSWarehouseFright_WarehouseShipmentFright_Service"]));
@@ -187,7 +187,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseShipmentList")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WarehouseShipmentList")]
         public string WindowsFormsApplication1_WSWhseShipHeaderList_WarehouseShipmentList_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSWhseShipHeaderList_WarehouseShipmentList_Service"]));
@@ -197,7 +197,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/ItemListPage")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/ItemListPage")]
         public string WindowsFormsApplication1_WSItemList_ItemListPage_Service {
             get {
                 return ((string)(this["WindowsFormsApplication1_WSItemList_ItemListPage_Service"]));
@@ -207,7 +207,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesCommentLines")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/SalesCommentLines")]
         public string Balance_Warehouse_WSSalesCommentLines_SalesCommentLines_Service {
             get {
                 return ((string)(this["Balance_Warehouse_WSSalesCommentLines_SalesCommentLines_Service"]));
@@ -217,7 +217,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesReturnOrder")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/SalesReturnOrder")]
         public string BalanceWarehouse_WSSalesReturnOrder_SalesReturnOrder_Service {
             get {
                 return ((string)(this["BalanceWarehouse_WSSalesReturnOrder_SalesReturnOrder_Service"]));
@@ -227,7 +227,7 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/TestItem")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/TestItem")]
         public string BalanceWarehouse_WSTestItemList_TestItem_Service {
             get {
                 return ((string)(this["BalanceWarehouse_WSTestItemList_TestItem_Service"]));

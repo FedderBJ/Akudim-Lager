@@ -114,13 +114,15 @@ namespace WindowsFormsApplication1
                             }
 
                             BinContentTool btool = new BinContentTool();
-
+                            ChangeStdBin = false;
                             if (!btool.BinIsDefault(Globals.theLocation, tbInputData.Text, "", "") && (lbStdBin.Text != tbInputData.Text))
                             {
-                                ChangeStdBin = false;
-                                if (MessageBox.Show(string.Format("Skal standard placering skiftes fra {0} til {1}?", lbStdBin.Text, lbNewBinCode.Text), "Skift standard placering", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                                if (MessageBox.Show(string.Format("Skal standard placering skiftes fra {0} til {1}?", lbStdBin.Text, lbNewBinCode.Text), "Skift standard placering", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                                 {
-                                    ChangeStdBin = true;
+                                    if (MessageBox.Show(string.Format("Er du sikker på at du vil skiftes fra {0} til {1}?", lbStdBin.Text, lbNewBinCode.Text), "Advarsel! Skifter standard placering", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
+                                    {
+                                        ChangeStdBin = true;
+                                    }
                                 }
                             }
 
@@ -140,18 +142,16 @@ namespace WindowsFormsApplication1
 
                             try
                             {
-                                WareHouse.WSPostTransfer(Globals.theTransferTemplateName, Globals.theTransferBatchName ,lbItemNo.Text.ToString(), lbUnitOfMesure.Text, Globals.theWinlogon, lbLocation.Text.ToString(), lbBin.Text.ToString(), lot.ToString(), lbNewLocation.Text.ToString(), lbNewBinCode.Text.ToString(), lot.ToString(), decimal.Parse(lbQuantity.Text.ToString()), false, DateTime.Parse(lbExpiredate.Text.ToString()), DateTime.Now, 0);
                                 if (ChangeStdBin)
                                 {
-                                    try
-                                    {
-                                        WareHouse.WSSetDefaultBin(Globals.theLocation, lbStdBin.Text, lbItemNo.Text, lbUnitOfMesure.Text, false);
-                                        WareHouse.WSSetDefaultBin(Globals.theLocation, lbNewBinCode.Text, lbItemNo.Text, lbUnitOfMesure.Text, true);
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
-                                    }
+                                    WareHouse.WSSetDefaultBin(Globals.theLocation, lbStdBin.Text, lbItemNo.Text, lbUnitOfMesure.Text, false);
+                                }
+
+                                WareHouse.WSPostTransfer(Globals.theTransferTemplateName, Globals.theTransferBatchName ,lbItemNo.Text.ToString(), lbUnitOfMesure.Text, Globals.theWinlogon, lbLocation.Text.ToString(), lbBin.Text.ToString(), lot.ToString(), lbNewLocation.Text.ToString(), lbNewBinCode.Text.ToString(), lot.ToString(), decimal.Parse(lbQuantity.Text.ToString()), false, DateTime.Parse(lbExpiredate.Text.ToString()), DateTime.Now, 0);
+
+                                if (ChangeStdBin)
+                                {
+                                    WareHouse.WSSetDefaultBin(Globals.theLocation, lbNewBinCode.Text, lbItemNo.Text, lbUnitOfMesure.Text, true);
                                 }
                             }
                             catch (Exception ex)

@@ -206,7 +206,7 @@
   </binding>
   <service name="TestItem_Service">
     <port name="TestItem_Port" binding="tns:TestItem_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/TestItem" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/TestItem" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

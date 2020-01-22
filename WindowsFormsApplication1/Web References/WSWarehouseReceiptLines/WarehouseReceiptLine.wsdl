@@ -361,7 +361,7 @@
   </binding>
   <service name="WarehouseReceiptLine_Service">
     <port name="WarehouseReceiptLine_Port" binding="tns:WarehouseReceiptLine_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseReceiptLine" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WarehouseReceiptLine" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

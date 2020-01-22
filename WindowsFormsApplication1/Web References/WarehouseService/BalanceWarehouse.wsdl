@@ -1659,7 +1659,7 @@
   </binding>
   <service name="BalanceWarehouse">
     <port name="BalanceWarehouse_Port" binding="tns:BalanceWarehouse_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Codeunit/BalanceWarehouse" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Codeunit/BalanceWarehouse" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

@@ -367,7 +367,7 @@
   </binding>
   <service name="BinContent_Service">
     <port name="BinContent_Port" binding="tns:BinContent_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/BinContent" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/BinContent" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

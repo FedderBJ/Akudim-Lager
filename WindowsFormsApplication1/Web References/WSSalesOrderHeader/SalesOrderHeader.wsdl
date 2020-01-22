@@ -727,7 +727,7 @@
   </binding>
   <service name="SalesOrderHeader_Service">
     <port name="SalesOrderHeader_Port" binding="tns:SalesOrderHeader_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesOrderHeader" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/SalesOrderHeader" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

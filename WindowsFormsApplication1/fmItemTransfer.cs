@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
     public partial class fmItemTransfer : Form
     {
         private string itemno = "";
+        private bool changedefaultbin = false;
 
         public fmItemTransfer()
         {
@@ -156,15 +157,9 @@ namespace WindowsFormsApplication1
                             {
                                 if (MessageBox.Show(string.Format("Skal standard placering skiftes fra {0} til {1}?", lbStdBin.Text, lbNewBinCode.Text), "Skift standard placering", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                                 {
-                                    try
+                                    if (MessageBox.Show(string.Format("Er du sikker på at du vil skiftes fra {0} til {1}?", lbStdBin.Text, lbNewBinCode.Text), "Advarsel! Skifter standard placering", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
                                     {
-                                        WareHouse.WSSetDefaultBin(Globals.theLocation, lbStdBin.Text, lbItemNo.Text, lbUnitOfMesure.Text, false);
-                                        WareHouse.WSSetDefaultBin(Globals.theLocation, lbNewBinCode.Text, lbItemNo.Text, lbUnitOfMesure.Text, true);
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
-                                        break;
+                                        changedefaultbin = true;
                                     }
                                 }
                             }
@@ -211,7 +206,17 @@ namespace WindowsFormsApplication1
                             WareHouse.UseDefaultCredentials = true;
                             try
                             {
+                                if (changedefaultbin)
+                                {
+                                    WareHouse.WSSetDefaultBin(Globals.theLocation, lbStdBin.Text, lbItemNo.Text, lbUnitOfMesure.Text, false);
+                                }
+                                
                                 WareHouse.WSPostTransfer(Globals.theTransferTemplateName, Globals.theTransferBatchName, lbItemNo.Text.ToString(), lbUnitOfMesure.Text, Globals.theWinlogon, lbLocation.Text.ToString(), lbBin.Text.ToString(), "", lbNewLocation.Text.ToString(), lbNewBinCode.Text.ToString(), itemno.ToString(), decimal.Parse(lbMoveQty.Text.ToString()), false, DateTime.Parse(DateTime.Now.ToString()), DateTime.Now, 0);
+                                
+                                if (changedefaultbin)
+                                {
+                                    WareHouse.WSSetDefaultBin(Globals.theLocation, lbNewBinCode.Text, lbItemNo.Text, lbUnitOfMesure.Text, true);
+                                }
                             }
                             catch (Exception ex)
                             {

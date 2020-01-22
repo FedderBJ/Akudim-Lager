@@ -253,7 +253,7 @@
   </binding>
   <service name="WarehouseShipmentList_Service">
     <port name="WarehouseShipmentList_Port" binding="tns:WarehouseShipmentList_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/WarehouseShipmentList" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/WarehouseShipmentList" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

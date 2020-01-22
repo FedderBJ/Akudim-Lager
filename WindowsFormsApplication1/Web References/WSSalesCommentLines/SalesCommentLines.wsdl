@@ -388,7 +388,7 @@
   </binding>
   <service name="SalesCommentLines_Service">
     <port name="SalesCommentLines_Port" binding="tns:SalesCommentLines_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/SalesCommentLines" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/SalesCommentLines" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>

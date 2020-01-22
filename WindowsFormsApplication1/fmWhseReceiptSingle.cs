@@ -340,7 +340,8 @@ namespace WindowsFormsApplication1
                             {
                                 break;
                             }
-#region Add Qty to purchaseorder
+                            lbQuantity.Text = tbInputData.Text;
+                            #region Add Qty to purchaseorder
                             if (d > remaning)
                             {
                                 if (MessageBox.Show(string.Format(mt.ReadResFile(this.Name.ToString() + "Message9"), remaning.ToString(), Environment.NewLine, tbInputData.Text), "", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -349,28 +350,34 @@ namespace WindowsFormsApplication1
                                     WareHouse.UseDefaultCredentials = true;
                                     try
                                     {
-                                        if (!WareHouse.WSAddQuantityToPurchaseOrder(POL.TheSourceNo, POL.TheItemNo, (d - remaning), POL.TheUnitOfMesure))
-                                        {
-                                            MessageBoxExample.MyMessageBox.ShowBox(mt.ReadResFile(this.Name.ToString() + "Message10"));
-                                        }
-
-                                        if (WareHouse.WSCreateWarehouseInboundDoc(OrderNo))
-                                        {
-                                            // Hent modtagelseslinjer på ny med de nye antal i.
-                                            GetReceiptliens(OrderNo, OrderType);
-                                            // GetReceiptlines tæller Globals.Step op med en så den skal sættes 1 ned.
-                                            Globals.GlobalStep--;
-                                            ExtractData();
-                                        }
-
+                                        WareHouse.WSAddQuantityToPurchaseOrder(POL.TheSourceNo, POL.TheItemNo, (d - remaning), POL.TheUnitOfMesure);
                                     }
                                     catch (Exception ex)
                                     {
                                         MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
+                                        break;
                                     }
-                                    finally
+                                    try
                                     {
-                                        WareHouse.Dispose();
+                                        WareHouse.WSCreateWarehouseInboundDoc(OrderNo);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
+                                        break;
+                                    }
+                                    try
+                                    {
+                                        // Hent modtagelseslinjer på ny med de nye antal i.
+                                        GetReceiptliens(OrderNo, OrderType);
+                                        // GetReceiptlines tæller Globals.Step op med en så den skal sættes 1 ned.
+                                        Globals.GlobalStep--;
+                                        ExtractData();
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
+                                        break;
                                     }
                                 }
                                 else
@@ -380,8 +387,8 @@ namespace WindowsFormsApplication1
                                     break;
                                 }
                             }
-#endregion
-                            lbQuantity.Text = tbInputData.Text;
+                            #endregion
+
                             POL.TheQuantity = d;
                             PurchaseLineList.Insert(POLindex, POL);
                             PurchaseLineList.RemoveAt(POLindex + 1);
@@ -389,7 +396,7 @@ namespace WindowsFormsApplication1
                             tbInputData.Focus();
                             tbInputData.SelectAll();
                             lblInputText.Text = mt.ReadResFile(this.Name.ToString() + "LabelInputText4");
-#region QaSample
+                            #region QaSample
                             decimal SQ = 0;
                             string UOM = "";
 
@@ -409,7 +416,7 @@ namespace WindowsFormsApplication1
                             {
                                 MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
                             }
-#endregion
+                            #endregion
 
                             if (POL.TheUseMHD)
                             {
@@ -426,7 +433,7 @@ namespace WindowsFormsApplication1
 
                                 if (WareHouse.WSItemUsesTracking(POL.TheItemNo))
                                 {
-#region Generate PID
+                                    #region Generate PID
                                     try
                                     {
                                         GenereretPID = WareHouse.WSReturnNewPID();
@@ -435,9 +442,9 @@ namespace WindowsFormsApplication1
                                     {
                                         MessageBoxExample.MyMessageBox.ShowBox(ex.Message);
                                     }
-#endregion
+                                    #endregion
 
-#region Print PID Preview
+                                    #region Print PID Preview
                                     try
                                     {
                                         WareHouse.WSPrintPidPrev(GenereretPID, Globals.theWinlogon, POL.TheItemNo, POL.TheQuantity.ToString(), POL.TheMHD.ToString(), Vendorlot, POL.TheUnitOfMesure.ToString());
@@ -448,7 +455,7 @@ namespace WindowsFormsApplication1
                                     {
                                         MessageBoxExample.MyMessageBox.ShowBox(ex.Message.ToString());
                                     }
-#endregion
+                                    #endregion
 
                                     // Hent Lotnummer fra nummerserie og opret Lot Info  Slut.
                                     Globals.step += 2;

@@ -391,7 +391,7 @@
   </binding>
   <service name="ItemBinContent_Service">
     <port name="ItemBinContent_Port" binding="tns:ItemBinContent_Binding">
-      <address location="http://mail.akudim.dk:7047/UDVIKLING/WS/AKUDIM/Page/ItemBinContent" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <address location="http://10.34.0.15:7047/DRIFT/WS/AKUDIM/Page/ItemBinContent" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
     </port>
   </service>
 </definitions>
